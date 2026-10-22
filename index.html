@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillPath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Smart Personalized Learning Path Recommender System</h1>
+</header>
+<div class="container">
+    <p>Select your career goal and take a readiness assessment to receive a personalized learning roadmap for your Skill</p>
+    <label for="careerGoal">Career Goal</label>
+    <select id="careerGoal">
+        <option value="" selected diabled>Select your Goal</option>
+        <option value="Web Development">Web Development</option>
+        <option value="AI/ML">Artificial Intelligencet & Machine Learning</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Python Development">Python Development</option>
+        <option value="Others">Others</option>
+    </select>
+    <br><br>
+    <button id="startBtn">
+        Start Assessment
+    </button>
+</div>
+    <!-- Assessment Section -->
+
+<div id="assessmentBox" class="container">
+
+    <h2>Skill Assessment Test</h2>
+
+    <div id="questionContainer">
+        <!-- Questions will appear here from JavaScript -->
+    </div>
+
+
+    <button id="submitAssessment">
+        Submit Assessment
+    </button>
+
+
+    <div id="resultSection">
+        <!-- Result will appear here -->
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
